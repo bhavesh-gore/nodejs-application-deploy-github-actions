@@ -5,6 +5,8 @@ const PORT = process.env.PORT ?? 8080
 
 app.get('/', (req, res) => {
     return res.json({ msg: 'Hello from the server v3 deploy with various changes made\n' })
+    return res.json({ msg: 'Hello from the server v3 deploy with various changes made\n' })
+
 })
 
 app.listen(PORT, () => {
