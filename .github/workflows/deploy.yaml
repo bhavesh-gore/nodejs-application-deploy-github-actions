@@ -1,4 +1,4 @@
-name: Deploy NodeJS Application to Hostinger
+name: Deploy NodeJS Application to EC2
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: root
+          username: ubuntu
           key: ${{ secrets.PRIVATEKEY }}
           script: |
             cd /ubuntu/nodejs-application-deploy-github-actions
