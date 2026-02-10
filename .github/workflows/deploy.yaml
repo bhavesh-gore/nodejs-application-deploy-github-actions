@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: root
-          key: ${{ secrets.privatekey }}
+          key: ${{ secrets.PRIVATEKEY }}
           script: |
             cd /root/nodejs-application-deploy-github-actions
             git pull
